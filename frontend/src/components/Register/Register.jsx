@@ -12,6 +12,8 @@ export function Register() {
   const [avatarPreview, setAvatarPreview] = useState("");
   const [role, setRole] = useState("user");
   const [number, setNumber] = useState("");
+  const [bloodGroup, setBloodGroup] = useState("A+");
+
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -47,6 +49,7 @@ export function Register() {
     formData.append("number", number);
     formData.append("avatar", avatar);
     formData.append("role", role);
+    formData.append("bloodGroup", bloodGroup);
 
     axios
       .post("http://localhost:8000/api/v1/users/register", formData, {
@@ -63,6 +66,7 @@ export function Register() {
         setAvatar("");
         setAvatarPreview("");
         setNumber("");
+        setBloodGroup("");
         navigate("/login");
       })
       .catch((error) => {
@@ -219,8 +223,29 @@ export function Register() {
                       setRole(e.target.value);
                     }}
                   >
+                    <option value="doctor">Doctor</option>
+                    <option value="teacher">Teacher</option>
                     <option value="user">User</option>
-                    <option value="volunteer">Volunteer</option>
+                  </select>
+                </div>
+                <div>
+                  <label>Select your BloodGroup: </label>
+                  <select
+                    name="bloodGroup"
+                    id="bloodGroup"
+                    value={bloodGroup}
+                    onChange={(e) => {
+                      setBloodGroup(e.target.value);
+                    }}
+                  >
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O-">O-</option>
+                    <option value="O+">O+</option>
                   </select>
                 </div>
                 <div>

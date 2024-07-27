@@ -2,7 +2,7 @@ import mongoose, { Schema } from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
-const patientSchema = new Schema(
+const donationSchema = new Schema(
   {
     fullName: {
         type: String,
@@ -23,26 +23,10 @@ const patientSchema = new Schema(
       trim: true,
       index: true,
     },
-    dob: {
-      type: Date,
-      required: true,
+    isDoner:{
+      type: Boolean,
+      default: false,
     },
-    
-    bloodGroup:{
-      type: String,
-      required: true,
-    },
-    docterId:{
-      type: String,
-    },
-    teacherId:{
-      type:String,
-    },
-    prescription:{
-      type: String,
-    },
-   
-
     refreshToken: {
       type: String,
     },
@@ -52,4 +36,4 @@ const patientSchema = new Schema(
 
 
 
-export const Patient = mongoose.model("patient", patientSchema);
+export const Donation = mongoose.model("Teacher", donationSchema);

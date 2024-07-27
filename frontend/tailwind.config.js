@@ -8,5 +8,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui"), require("frolic-react")],
+  
 };

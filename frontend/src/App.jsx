@@ -17,6 +17,8 @@ import { toast } from "react-toastify";
 import Donation from "./components/Donation/Donation";
 import { Home } from "./components/Home/Home";
 import AdminDashboard from "./pages/AdminDashboard";
+import React from "react";
+import VolunteeringPage from "./components/Volunteer/VolunteeringPage"
 
 function App() {
   const [data, setData] = useState("");
@@ -73,14 +75,16 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="*" element={<Error />} />
+        <Route path="/volunteer" element={<VolunteeringPage/>}/>
+    
       </Route>
     )
   );
   return (
     <>
-      <Loader show={loading} />
-      <volunteer />
-      <RouterProvider router={route} />
+      <Loader show={loading}/>
+      {/* <VolunteeringPage/> */}
+      <RouterProvider router={route}/>
     </>
   );
 }

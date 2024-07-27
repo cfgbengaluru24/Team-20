@@ -12,8 +12,10 @@ import { Layout } from "./Layout";
 import Loader from "./components/Loader/Loader";
 import { Error } from "./components/Error/Error";
 import setupAxiosInterceptors from "./axiosInterceptor";
+
 import axios from "axios";
 import { toast } from "react-toastify";
+import DoctorConsultancy from "./components/DoctorConsultancy/DoctorConsultancy";
 
 function App() {
   const [data, setData] = useState("");
@@ -66,6 +68,9 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route path="/login" element={<Login setData={setData} />} />
         <Route path="/register" element={<Register />} />
+        
+        <Route path="/doctor" element={<DoctorConsultancy />} />
+        
         <Route path="*" element={<Error />} />
       </Route>
     )

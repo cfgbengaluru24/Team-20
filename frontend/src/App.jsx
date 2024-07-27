@@ -19,6 +19,7 @@ import { Home } from "./components/Home/Home";
 import AdminDashboard from "./pages/AdminDashboard";
 import Donator from "./components/DonatorDash/Donator";
 import Bill from "./components/Bill/Bill";
+import VolunteeringPage from "./components/Volunteer/VolunteeringPage";
 
 function App() {
   const [data, setData] = useState("");
@@ -76,6 +77,7 @@ function App() {
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/donator/:userId" element={<Donator />} />
         <Route exact path="/bill" element={<Bill />} />
+        <Route exact path="/volunteer" element={<VolunteeringPage />} />
         <Route path="*" element={<Error />} />
       </Route>
     )
@@ -83,7 +85,7 @@ function App() {
   return (
     <>
       <Loader show={loading} />
-      <volunteer />
+
       <RouterProvider router={route} />
     </>
   );

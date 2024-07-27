@@ -11,17 +11,18 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "@material-tailwind/react": "^2.1.9",
     "axios": "^1.7.2",
     "frolic-react": "^1.0.12",
-    "lucide-react": "^0.407.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.24.1",
-    "react-toastify": "^10.0.5",
     "i18next": "^23.12.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.5.2",
-    "react-i18next": "^15.0.0"
+    "lucide-react": "^0.407.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.0",
+    "react-router-dom": "^6.24.1",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

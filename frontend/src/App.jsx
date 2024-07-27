@@ -18,6 +18,7 @@ import { toast } from "react-toastify";
 import Donation from "./components/Donation/Donation";
 import { Home } from "./components/Home/Home";
 import VolunteeringPage from "./components/Volunteer/VolunteeringPage";
+import AdminDashboard from "./pages/AdminDashboard";
 
 function App() {
   const [data, setData] = useState("");
@@ -70,6 +71,9 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route path="/login" element={<Login setData={setData} />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/donation" element={<Donation />} />
+        <Route path="/admin" element={<AdminDashboard />} />
         <Route path="*" element={<Error />} />
       </Route>
     )

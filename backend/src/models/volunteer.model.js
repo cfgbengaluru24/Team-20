@@ -12,7 +12,6 @@ const volunteerSchema = new Schema(
       },
     experience: {
       type: String,
-      required: true,
       unique: true,
       lowercase: true,
       trim: true,

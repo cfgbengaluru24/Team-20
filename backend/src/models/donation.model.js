@@ -1,39 +1,44 @@
+import e from "express";
 import mongoose, { Schema } from "mongoose";
-import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
 
-const donationSchema = new Schema(
+const donationSchema = new mongoose.Schema(
   {
+    orderId: {
+      type: String,
+      required: true,
+    },
+
     fullName: {
-        type: String,
-        required: true,
-        trim: true,
-        index: true,
-      },
-    email: {
       type: String,
       required: true,
-      unique: true,
-      lowercase: true,
-      trim: true,
     },
-    phoneNumber: {
+
+    owner: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+
+    amount: {
+      type: Number,
+      required: true,
+    },
+
+    receipt: {
       type: String,
       required: true,
-      trim: true,
-      index: true,
     },
-    isDoner:{
-      type: Boolean,
-      default: false,
-    },
-    refreshToken: {
+
+    status: {
       type: String,
+      enum: ["rejected", "accepted"],
+      required: true,
+      default: "rejected",
     },
   },
   { timestamps: true }
 );
 
+const Donation = mongoose.model("Donation", donationSchema);
 
-
-export const Donation = mongoose.model("Teacher", donationSchema);
+export { Donation };

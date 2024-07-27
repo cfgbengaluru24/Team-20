@@ -14,6 +14,8 @@ import { Error } from "./components/Error/Error";
 import setupAxiosInterceptors from "./axiosInterceptor";
 import axios from "axios";
 import { toast } from "react-toastify";
+import Donation from "./components/Donation/Donation";
+import { Home } from "./components/Home/Home";
 
 
 function App() {
@@ -67,6 +69,8 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route path="/login" element={<Login setData={setData} />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/donation" element={<Donation />} />
+        <Route path="/home" element={<Home />} />
         <Route path="*" element={<Error />} />
       </Route>
     )

@@ -14,6 +14,8 @@ import { Error } from "./components/Error/Error";
 import setupAxiosInterceptors from "./axiosInterceptor";
 import axios from "axios";
 import { toast } from "react-toastify";
+import {DoctorDashboard} from "./components/LandingPage/DoctorDashboard";
+import VolunteeringPage from "./components/Volunteer/VolunteeringPage";
 
 
 function App() {
@@ -67,6 +69,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route path="/login" element={<Login setData={setData} />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<DoctorDashboard />} />
         <Route path="*" element={<Error />} />
       </Route>
     )
@@ -74,7 +77,7 @@ function App() {
   return (
     <>
       <Loader show={loading} />
-      <volunteer/>
+      <VolunteeringPage/>
       <RouterProvider router={route} />
     </>
   );

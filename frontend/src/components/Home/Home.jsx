@@ -54,7 +54,7 @@ export function Home() {
               </Link>
             </div>
             <img
-              src="/placeholder.svg"
+              src="frontend\src\assets\images\.jpg"
               width={600}
               height={400}
               alt="Hero Image"
@@ -78,7 +78,7 @@ export function Home() {
             <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
               <div className="grid gap-1">
                 <img
-                  src="/placeholder.svg"
+                  src="frontend\src\assets\images\cataract.jpg"
                   width={300}
                   height={200}
                   alt="Service 1"
@@ -92,7 +92,7 @@ export function Home() {
               </div>
               <div className="grid gap-1">
                 <img
-                  src="/placeholder.svg"
+                  src="frontend\src\assets\images\CLAPR.jpg"
                   width={300}
                   height={200}
                   alt="Service 2"
@@ -108,23 +108,21 @@ export function Home() {
               </div>
               <div className="grid gap-1">
                 <img
-                  src="/placeholder.svg"
+                  src="frontend\src\assets\images\Anemia.jpg"
                   width={300}
                   height={200}
                   alt="Service 3"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
                 />
-                <h3 className="text-lg font-bold">Burn Reconstruction</h3>
+                <h3 className="text-lg font-bold">Anemia Recovery</h3>
                 <p className="text-sm text-muted-foreground">
-                  Providing comprehensive care and rehabilitation for burn
-                  survivors.
+                   Recovering from anemia involves a nutrient-rich diet, regular monitoring, and lifestyle adjustments to ensure proper health and well-being.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section
-          id="impact"
+        <section          id="impact"
           className="w-full py-12 md:py-24 lg:py-32 bg-muted"
         >
           <div className="container px-4 md:px-6 space-y-12">
@@ -141,7 +139,7 @@ export function Home() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src="/placeholder.svg"
+                src="frontend\src\assets\images\smile.png"
                 width={550}
                 height={310}
                 alt="Impact Image"
@@ -171,10 +169,9 @@ export function Home() {
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">Burn Reconstruction</h3>
+                      <h3 className="text-xl font-bold">Anemia Recovery</h3>
                       <p className="text-muted-foreground">
-                        Provided comprehensive care and rehabilitation to
-                        hundreds of burn survivors.
+                        Provided comprehensive care and health support to several individuals.
                       </p>
                     </div>
                   </li>
@@ -200,35 +197,33 @@ export function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <img
-                    src="/placeholder.svg"
+                    src="frontend\src\assets\images\smile2.jpg"
                     width={310}
                     height={310}
                     alt="Testimonial 1"
                     className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center sm:w-40 lg:w-52"
                   />
-                  <h3 className="text-lg font-bold">John Doe</h3>
+                  {/* <h3 className="text-lg font-bold"></h3> */}
                   <p className="text-muted-foreground">
-                    "Rohini NGO gave me my sight back. I will be forever
-                    grateful for their care and expertise."
+                    "Preventive oral health care camp done for visually impaired children."
                   </p>
                 </div>
                 <div className="grid gap-1">
                   <img
-                    src="/placeholder.svg"
+                    src="frontend\src\assets\images\oralhealth.jpeg"
                     width={310}
                     height={310}
                     alt="Testimonial 2"
                     className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center sm:w-40 lg:w-52"
                   />
-                  <h3 className="text-lg font-bold">Jane Smith</h3>
+                  {/* <h3 className="text-lg font-bold"></h3> */}
                   <p className="text-muted-foreground">
-                    "The team at Rohini NGO changed my life. Their dedication
-                    and skill are unmatched."
+                    "Blood donation camp organised by Rohini Foundation for Thalassemia children."
                   </p>
                 </div>
               </div>
               <img
-                src="/placeholder.svg"
+                src="frontend\src\assets\images\Blooddonationcamp.jpg"
                 width={550}
                 height={310}
                 alt="Testimonial Image"

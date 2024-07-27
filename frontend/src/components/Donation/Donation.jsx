@@ -72,11 +72,11 @@ export default function Donation() {
                 type="number"
                 placeholder="Enter amount"
                 className="flex-1 border px-4 py-2 rounded-md text-black"
-                // value={amount}
-                // onChange={(e) => setAmount(e.target.value)}
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
               />
               <button
-                // onClick={handlePayment}
+                onClick={handlePayment}
                 className="flex-1 bg-black text-white"
               >
                 Donate Now

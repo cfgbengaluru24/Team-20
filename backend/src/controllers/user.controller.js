@@ -85,11 +85,11 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
 
 const registerUser = asyncHandler(async (req, res) => {
   // details
-  const { fullName, email, password, number, role } = req.body;
+  const { fullName, email, password, number, role, bloodGroup } = req.body;
 
   // validation
   if (
-    [fullName, email, password, number, role].some(
+    [fullName, email, password, number, role, bloodGroup].some(
       (field) => field?.trim() === ""
     )
   ) {
@@ -126,6 +126,7 @@ const registerUser = asyncHandler(async (req, res) => {
     number,
     password,
     role,
+    bloodGroup,
   });
 
   // remove pass and refreshToken

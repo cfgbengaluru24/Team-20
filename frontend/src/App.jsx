@@ -15,6 +15,7 @@ import setupAxiosInterceptors from "./axiosInterceptor";
 import axios from "axios";
 import { toast } from "react-toastify";
 
+
 function App() {
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(false);
@@ -73,6 +74,7 @@ function App() {
   return (
     <>
       <Loader show={loading} />
+      <volunteer/>
       <RouterProvider router={route} />
     </>
   );

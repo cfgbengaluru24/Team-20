@@ -15,6 +15,9 @@ import setupAxiosInterceptors from "./axiosInterceptor";
 import axios from "axios";
 import { toast } from "react-toastify";
 
+import Donation from "./components/Donation/Donation";
+import { Home } from "./components/Home/Home";
+import VolunteeringPage from "./components/Volunteer/VolunteeringPage";
 
 function App() {
   const [data, setData] = useState("");
@@ -74,7 +77,8 @@ function App() {
   return (
     <>
       <Loader show={loading} />
-      <volunteer/>
+      {/* <VolunteeringPage /> */}
+
       <RouterProvider router={route} />
     </>
   );

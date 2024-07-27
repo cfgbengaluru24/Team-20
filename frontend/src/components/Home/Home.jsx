@@ -1,46 +1,15 @@
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 export function Home() {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link to="#" className="flex items-center justify-center">
-          {/* <HeartIcon className="h-6 w-6 text-primary" /> */}
-          <span className="sr-only">Rohini NGO</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            to="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-          >
-            Services
-          </Link>
-          <Link
-            to="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-          >
-            Impact
-          </Link>
-          <Link
-            to="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-          >
-            Testimonials
-          </Link>
-          <Link
-            to="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-primary">
           <div className="container px-4 md:px-6 grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter text-primary-foreground sm:text-5xl md:text-6xl">
-                Rohini NGO
+                {t("home.hero.title")}
               </h1>
               <p className="max-w-[600px] text-primary-foreground md:text-xl">
                 Providing high-quality, affordable medical services to those in
@@ -54,7 +23,11 @@ export function Home() {
               </Link>
             </div>
             <img
+
               src="frontend\src\assets\images\.jpg"
+
+              src="/main_image.jpg"
+
               width={600}
               height={400}
               alt="Hero Image"

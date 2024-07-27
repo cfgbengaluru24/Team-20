@@ -4,6 +4,7 @@ import "./Donator.css";
 import image from "../../../assets/download.jpeg";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import cerificate from "../../../assets/Dky0lmDXoAAMSUv.jpg";
 // import PaymentForm from "../Payment/PaymentForm";
 // import Bill from "../Bill/Bill";
 // import "../assets/js/ProfileScript";
@@ -106,11 +107,11 @@ const Donator = () => {
 
   //   user = userDetails[0];
   //   console.log(userDetails);
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  //   const handleInvoiceClick = (bill, user) => {
-  //     navigate("/bill", { state: { user, bill } });
-  //   };
+  const handleInvoiceClick = (bill, user) => {
+    navigate("/bill", { state: { user, bill } });
+  };
 
   return (
     <body>
@@ -214,7 +215,9 @@ const Donator = () => {
                     As of <span className="date">{cur}</span>
                   </p>
                 </div>
-                <p className="balance__value">Total: ₹{totalAmount}</p>
+                <p className="balance__value">
+                  Total: ₹{totalAmount ? totalAmount : 1123}
+                </p>
               </div>
               {/* <!-- SUMMARY --> */}
               <div className="summary">
@@ -254,18 +257,6 @@ const Donator = () => {
                         </div>
                         <div className="movements__value"></div>
 
-                        <button
-                          className="button-57"
-                          role="button"
-                          type="button"
-                          // onClick={() => handleInvoiceClick(bill, userDetails)}
-                        >
-                          <span>
-                            <i className="fa-solid fa-download"></i>
-                          </span>
-                          <span>Certificate</span>
-                        </button>
-
                         {/* <Link to="/payment"> */}
 
                         <button
@@ -278,8 +269,25 @@ const Donator = () => {
                           </span>
                           <span>
                             {/* <PaymentForm items={bill} userId={userId} /> */}
-                            Invoice
+                            <a
+                              href="../../../assets/Dky0lmDXoAAMSUv.jpg"
+                              target="_blank"
+                            >
+                              Certificate
+                            </a>
                           </span>
+                        </button>
+
+                        <button
+                          className="button-57"
+                          role="button"
+                          type="button"
+                          onClick={() => handleInvoiceClick(bill, userDetails)}
+                        >
+                          <span>
+                            <i className="fa-solid fa-download"></i>
+                          </span>
+                          <span>Invoice</span>
                         </button>
 
                         {/* </Link> */}

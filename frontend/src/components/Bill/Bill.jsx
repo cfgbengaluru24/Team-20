@@ -60,7 +60,7 @@ const Bill = () => {
               <div className="invoice-head-middle-right text-end">
                 <p>
                   <span className="text-bold">Invoice No:</span>
-                  {bill.billId}
+                  {bill._id}
                 </p>
               </div>
             </div>
@@ -69,15 +69,15 @@ const Bill = () => {
               <div className="invoice-head-bottom-left">
                 <ul>
                   <li className="text-bold">Invoiced To:</li>
-                  <li>{user.name}</li>
+                  <li>{user.fullName}</li>
                   <li>{user.region}</li>
                 </ul>
               </div>
               <div className="invoice-head-bottom-right">
                 <ul className="text-end">
                   <li className="text-bold">Pay To:</li>
-                  <li>Powertrack</li>
-                  <li>JSSSTU</li>
+                  <li>Rohini Oral Healthcare Foundation</li>
+                  <li>Telangana</li>
                 </ul>
               </div>
             </div>
@@ -88,20 +88,18 @@ const Bill = () => {
                 <thead>
                   <tr>
                     <td className="text-bold">Service</td>
-                    <td className="text-bold">Phase Field</td>
-                    <td className="text-bold">Meter Number</td>
-                    <td className="text-bold">Rate</td>
+                    <td className="text-bold">Mobile</td>
+                    <td className="text-bold">Email</td>
                     <td className="text-bold">Units</td>
                     <td className="text-bold">Amount</td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Electricity Bill</td>
-                    <td>{user.address}</td>
-                    <td>{user.meterId}</td>
-                    <td>7.00</td>
-                    <td>{bill.consumption}</td>
+                    <td>Donation</td>
+                    <td>{user.number}</td>
+                    <td>{user.email}</td>
+                    <td>{bill.status}</td>
                     <td className="text-end">{bill.amount}</td>
                   </tr>
                 </tbody>
@@ -131,9 +129,7 @@ const Bill = () => {
               signature.
             </p>
             <br />
-            <p>
-              <b>Due Date</b>:{bill.dueDate.substring(0, 10)}
-            </p>
+
             <div className="invoice-btns">
               <button
                 type="button"

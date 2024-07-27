@@ -18,6 +18,7 @@ import Donation from "./components/Donation/Donation";
 import { Home } from "./components/Home/Home";
 import AdminDashboard from "./pages/AdminDashboard";
 import Donator from "./components/DonatorDash/Donator";
+import Bill from "./components/Bill/Bill";
 
 function App() {
   const [data, setData] = useState("");
@@ -74,6 +75,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/donator/:userId" element={<Donator />} />
+        <Route exact path="/bill" element={<Bill />} />
         <Route path="*" element={<Error />} />
       </Route>
     )

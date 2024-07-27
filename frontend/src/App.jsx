@@ -19,6 +19,7 @@ import Donation from "./components/Donation/Donation";
 import { Home } from "./components/Home/Home";
 import VolunteeringPage from "./components/Volunteer/VolunteeringPage";
 import AdminDashboard from "./pages/AdminDashboard";
+import Donator from "./components/DonatorDash/Donator";
 
 function App() {
   const [data, setData] = useState("");
@@ -74,6 +75,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/donation" element={<Donation />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/donator/:userId" element={<Donator />} />
         <Route path="*" element={<Error />} />
       </Route>
     )

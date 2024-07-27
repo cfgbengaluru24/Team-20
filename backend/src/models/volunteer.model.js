@@ -2,7 +2,7 @@ import mongoose, { Schema } from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
-const patientSchema = new Schema(
+const volunteerSchema = new Schema(
   {
     fullName: {
         type: String,
@@ -10,39 +10,40 @@ const patientSchema = new Schema(
         trim: true,
         index: true,
       },
-    email: {
+    experience: {
       type: String,
       required: true,
       unique: true,
       lowercase: true,
       trim: true,
     },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+        lowercase: true,
+        trim: true,
+      },
     phoneNumber: {
       type: String,
       required: true,
       trim: true,
       index: true,
     },
+    city: {
+        type: String,
+        required: true,
+        trim: true,
+        index: true,
+      },
     dob: {
-      type: Date,
-      required: true,
-    },
-    
-    bloodGroup:{
-      type: String,
-      required: true,
-    },
-    docterId:{
-      type: String,
-    },
-    teacherId:{
-      type:String,
-    },
-    prescription:{
-      type: String,
-    },
-   
-
+        type: Date,
+        required: true,
+      },
+    resume: {
+        type: String,
+        required: true,
+      },
     refreshToken: {
       type: String,
     },
@@ -52,4 +53,4 @@ const patientSchema = new Schema(
 
 
 
-export const Patient = mongoose.model("patient", patientSchema);
+export const Volunteer = mongoose.model("Volunteer", volunteerSchema);

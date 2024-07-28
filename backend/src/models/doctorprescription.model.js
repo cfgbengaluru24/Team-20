@@ -2,11 +2,8 @@ import mongoose, { Schema } from "mongoose";
 
 const doctorprescriptionSchema = new mongoose.Schema(
   {
-
-
     image: {
       type: String,
-
     },
 
     symptoms: {
@@ -15,17 +12,17 @@ const doctorprescriptionSchema = new mongoose.Schema(
     },
 
     oralPh: {
-      type: mongoose.Schema.Types.Decimal128,
+      type: String,
       required: true,
     },
 
     plagueIndex: {
-      type: Number,
+      type: String,
       required: true,
     },
 
     gungivalIndex: {
-      type: Number,
+      type: String,
       required: true,
     },
 
@@ -40,17 +37,20 @@ const doctorprescriptionSchema = new mongoose.Schema(
     },
 
     IronDeficiency: {
+      type: Boolean,
+      required: true,
+    },
+    prescription: {
       type: String,
       required: true,
     },
-    prescription:{
-        type: String,
-        required:true,
-    }
   },
   { timestamps: true }
 );
 
-const doctorprescription = mongoose.model("doctorprescription", doctorprescriptionSchema);
+const DoctorPrescription = mongoose.model(
+  "DoctorPrescription",
+  doctorprescriptionSchema
+);
 
-export { doctorprescription };
+export { DoctorPrescription };

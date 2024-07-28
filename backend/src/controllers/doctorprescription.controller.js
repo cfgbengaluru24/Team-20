@@ -3,63 +3,60 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/apiError.js";
 import { ApiResponse } from "../utils/apiResponse.js";
 
-// Define the schema
-const doctorprescriptionSchema = new mongoose.Schema(
-  {
-    image: {
-      type: String,
-    },
-    symptoms: {
-      type: String,
-      required: true,
-    },
-    oralPh: {
-      type: mongoose.Schema.Types.Decimal128,
-      required: true,
-    },
-    plagueIndex: {
-      type: Number,
-      required: true,
-    },
-    gungivalIndex: {
-      type: Number,
-      required: true,
-    },
-    thalassemia: {
-      type: Boolean,
-      required: true,
-    },
-    vitaminDeficiency: {
-      type: Boolean,
-      required: true,
-    },
-    IronDeficiency: {
-      type: String,
-      required: true,
-    },
-    prescription: {
-      type: String,
-      required: true,
-    },
-  },
-  { timestamps: true }
-);
+import { DoctorPrescription } from "../models/doctorprescription.model.js";
 
-// Create the model
-const DoctorPrescription = mongoose.model(
-  "DoctorPrescription",
-  doctorprescriptionSchema
-);
-
-
-
-// Create a new doctor prescription
 const createDoctorPrescription = asyncHandler(async (req, res) => {
-  const prescription = await DoctorPrescription.create(req.body);
+  const {
+    symptoms,
+    oralPh,
+    plagueIndex,
+    gungivalIndex,
+    thalassemia,
+    vitaminDeficiency,
+    IronDeficiency,
+    prescription,
+    image,
+  } = req.body;
+  console.log(req.body);
+  if (
+    !symptoms ||
+    oralPh === undefined ||
+    plagueIndex === undefined ||
+    gungivalIndex === undefined ||
+    thalassemia === undefined ||
+    vitaminDeficiency === undefined ||
+    !IronDeficiency ||
+    !prescription
+  ) {
+    throw new ApiError(400, "All required fields must be provided");
+  }
+
+  const newPrescription = await DoctorPrescription.create({
+    symptoms,
+    oralPh,
+    plagueIndex,
+    gungivalIndex,
+    thalassemia,
+    vitaminDeficiency,
+    IronDeficiency,
+    prescription,
+  });
+  // const newPrescription = await DoctorPrescription.create({
+  //   image: image,
+  //   symptoms: "hi",
+  //   oralPh: "hi",
+  //   plagueIndex: "hi",
+  //   gungivalIndex: "hi",
+  //   thalassemia: true,
+  //   vitaminDeficiency: true,
+  //   IronDeficiency: false,
+  //   prescription: "demo",
+  // });
+
   res
     .status(201)
     .json(
-      new ApiResponse(201, prescription, "Prescription created successfully")
+      new ApiResponse(201, newPrescription, "Prescription created successfully")
     );
 });
 

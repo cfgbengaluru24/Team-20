@@ -23,11 +23,7 @@ export function Home() {
               </Link>
             </div>
             <img
-
-              src="frontend\src\assets\images\.jpg"
-
               src="/main_image.jpg"
-
               width={600}
               height={400}
               alt="Hero Image"
@@ -51,7 +47,7 @@ export function Home() {
             <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
               <div className="grid gap-1">
                 <img
-                  src="frontend\src\assets\images\cataract.jpg"
+                  src="/Anemia.jpg"
                   width={300}
                   height={200}
                   alt="Service 1"
@@ -89,13 +85,16 @@ export function Home() {
                 />
                 <h3 className="text-lg font-bold">Anemia Recovery</h3>
                 <p className="text-sm text-muted-foreground">
-                   Recovering from anemia involves a nutrient-rich diet, regular monitoring, and lifestyle adjustments to ensure proper health and well-being.
+                  Recovering from anemia involves a nutrient-rich diet, regular
+                  monitoring, and lifestyle adjustments to ensure proper health
+                  and well-being.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section          id="impact"
+        <section
+          id="impact"
           className="w-full py-12 md:py-24 lg:py-32 bg-muted"
         >
           <div className="container px-4 md:px-6 space-y-12">
@@ -144,7 +143,8 @@ export function Home() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Anemia Recovery</h3>
                       <p className="text-muted-foreground">
-                        Provided comprehensive care and health support to several individuals.
+                        Provided comprehensive care and health support to
+                        several individuals.
                       </p>
                     </div>
                   </li>
@@ -178,7 +178,8 @@ export function Home() {
                   />
                   {/* <h3 className="text-lg font-bold"></h3> */}
                   <p className="text-muted-foreground">
-                    "Preventive oral health care camp done for visually impaired children."
+                    "Preventive oral health care camp done for visually impaired
+                    children."
                   </p>
                 </div>
                 <div className="grid gap-1">
@@ -191,7 +192,8 @@ export function Home() {
                   />
                   {/* <h3 className="text-lg font-bold"></h3> */}
                   <p className="text-muted-foreground">
-                    "Blood donation camp organised by Rohini Foundation for Thalassemia children."
+                    "Blood donation camp organised by Rohini Foundation for
+                    Thalassemia children."
                   </p>
                 </div>
               </div>

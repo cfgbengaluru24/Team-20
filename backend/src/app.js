@@ -17,9 +17,13 @@ app.use(cookieParser());
 
 import userRouter from "./routes/user.routes.js";
 import donationRouter from "./routes/donation.routes.js";
+import doctorpre from "./routes/doctorPrescription.js";
+import volunteer from "./routes/volunteer.routes.js";
 // // routes declaration
 
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/donations", donationRouter);
+app.use("/api/v1/doctorPrescriptions", doctorpre);
+app.use("/api/v1/volunteer", volunteer);
 
 export { app };

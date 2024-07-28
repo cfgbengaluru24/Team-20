@@ -1,0 +1,7 @@
+flask
+flask-socketio
+speechrecognition
+deep-translator
+gtts
+eventlet
+langdetect

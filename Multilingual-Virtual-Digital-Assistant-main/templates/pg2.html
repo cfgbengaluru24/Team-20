@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVDA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .section{
+        padding: 0px;
+        margin: 0px;
+        background-color: #f5f4f3;
+      }
+      .header-footer{
+        background-color: #113946;
+        color: #F5F7FA;
+      }
+      .nav-link{
+        color: #F5F7FA;
+        font-size: 18px;
+      }
+      .mvda{
+        color: #F5F7FA;
+      }
+      #img1{
+        height: 500px;
+      }
+      .btn{
+        background-color: #113946;
+        color: #F5F7FA;
+      }
+      .p1{
+        font-size: 20px;
+        text-align: justify;
+      }
+      .input{
+        border-radius: 6px;
+      }
+      .modal-content input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      /* Modal Styles */
+      .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+      }
+    </style>
+</head>
+<body>
+
+  <!-- header -->
+  <section class="header-footer"> 
+    <div class="container-fluid">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <img src="/static/img/robot2.svg" width="30px"><pre> </pre>
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <span class="fs-4 mvda">MVDA</span></pre>
+          </a>
+  
+          <ul class="nav nav-pills">
+             <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+             <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+             <li class="nav-item"><a href="#faq" class="nav-link">FAQs</a></li>
+             <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+      </header>
+    </div>
+  </section>  
+
+  <!-- Section 1 -->
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/static/img/robo.avif" class="d-block mx-lg-auto img-fluid" alt="robot" id="img1" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Multilingual Virtual Digital Assistant</h1><br>
+        <p class="lead p1">Welcome to the Multilingual Virtual Meeting Assistant, your reliable partner for smooth multilingual communication in video conferences and virtual meetings. Our technology enables you to break down language barriers, guaranteeing that every participant can fully join and contribute to the discussion. Explore our platform today and imagine a world where language is no longer an impediment to connection and collaboration.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Section 2-->
+  <section class="section" id="about">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-lg-6 order-lg-2">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Our Mission</h1>
+          <p class="lead p1">At Multilingual Virtual Meeting Assistant, our mission is to break down language barriers and foster global connectivity through innovative AI solutions. We believe that effective communication is the foundation of successful collaboration, and we are committed to empowering individuals and organizations to engage with diverse audiences seamlessly.
+          </p>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <img src="/static/img/girlwithrobo.avif" class="d-block mx-lg-auto img-fluid" alt="Text Sentiment Analyzer Hub in action" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 3 -->
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/static/img/premium_photo-1661510087854-bcc116f910da.avif" class="d-block mx-lg-auto img-fluid" alt="robot" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Join Our Community
+        </h1><br>
+        <p class="lead p1">We invite you to explore our platform and experience the power of multilingual communication firsthand. Connect with us on social media, share your feedback, and join our growing community of users who are transforming the way they communicate in a globalized world.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mvda -->
+  <section class="section">
+    <div class="container">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Multilingual Community Chat Interface For Everyone!!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Connect, Collaborate and Celebrate from anywhere.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="showNicknameModal('create')">Create a new Meeting</button>
+            <input type="text" id="meeting-id-input" class="input" placeholder="Enter the meeting ID">
+            <button type="button" class="btn btn-secondary btn-lg px-4" onclick="showNicknameModal('join')">Join</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- features -->
+  <section id="features">
+    <div class="container px-4 py-5">
+      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+        <div class="col d-flex flex-column align-items-start gap-2">
+          <h2 class="fw-bold text-body-emphasis">Ready to explore ?</h2>
+          <p class="text-body-secondary">Whether you're conducting a global business meeting, collaborating with international teams, or simply connecting with friends and family across the globe, our virtual meeting assistant is here to help you communicate with confidence and clarity.</p>
+          <p class="text-body-secondary">Secure and reliable service with 24/7 support.</p>
+        </div>
+
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex bg-gradient fs-4 rounded-3">
+                <img src="/static/img/translate.svg" width="40px">
+              </div>
+              <p class="text-body-secondary">Real-time transcription of spoken language into text in over 95 languages.</p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex bg-gradient fs-4 rounded-3">
+                <img src="/static/img/person-hearts.svg" width="40px">
+              </div>
+              <p class="text-body-secondary">Instant translation of messages between participants in their preferred languages.</p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex bg-gradient fs-4 rounded-3">
+                <img src="/static/img/journal-bookmark-fill.svg" width="40px">
+              </div>
+              <p class="text-body-secondary">Customized language-specific summaries and action items for each participant.</p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex bg-gradient fs-4 rounded-3">
+                <img src="/static/img/person-badge.svg" width="40px">
+              </div>
+              <p class="text-body-secondary">Facial expression and sentiment analysis for enhanced communication insights.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section  class="header-footer">
+    <div class="container-fluid">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0">© 2024 Multilingual Virtual Digital Assistant. All Rights Reserved - Call us 7406888564</span>
+        </div>
+    
+        <ul class="nav col-md-1 list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter svg" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+          </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-discord svg" viewBox="0 0 16 16">
+            <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+          </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram svg" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-whatsapp svg" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg></a></li>
+        </ul>
+      </footer>
+    </div>
+</section> 
+
+  <!-- Nickname Modal -->
+  <div id="nicknameModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enter your nickname</h2>
+      <input type="text" id="nickname" placeholder="Nickname">
+      <button type="button" class="btn btn-primary" onclick="submitNickname()">Submit</button>
+    </div>
+  </div>
+
+  <!-- JavaScript for Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-wFFax7u2RWTL+E0eFVvi2STbDICFJBOeLyHh9zKkWz6xKDFy5czT/n7sgUCo3Auz" crossorigin="anonymous"></script>
+
+  <!-- JavaScript for meeting ID generation, navigation, and nickname handling -->
+  <script>
+    let actionType = ''; // 'create' or 'join'
+    let meetingId = '';
+  
+    function showNicknameModal(action) {
+      actionType = action;
+      if (action === 'join') {
+        meetingId = document.getElementById('meeting-id-input').value;
+        if (!meetingId) {
+          alert('Please enter a valid meeting ID.');
+          return;
+        }
+      }
+      document.getElementById('nicknameModal').style.display = 'block';
+    }
+  
+    function submitNickname() {
+      const nickname = document.getElementById('nickname').value;
+      if (!nickname) {
+        alert('Please enter a valid nickname.');
+        return;
+      }
+      document.getElementById('nicknameModal').style.display = 'none';
+  
+      if (actionType === 'create') {
+        meetingId = Math.floor(Math.random() * 100000000);
+      }
+  
+      // Redirect to client.py
+      window.location.href = `i1.html?meetingId=${meetingId}&nickname=${encodeURIComponent(nickname)}`;
+  
+     /* // Redirect to index.html
+      setTimeout(function() {
+        window.location.href = `index.html?meetingId=${meetingId}&nickname=${encodeURIComponent(nickname)}`;
+      }, 1000); // Adjust delay as needed
+    */
+    }
+  
+    // Close the modal
+    const modal = document.getElementById('nicknameModal');
+    const span = document.getElementsByClassName('close')[0];
+    span.onclick = function() {
+      modal.style.display = 'none';
+    }
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+  
+</body>
+</html>

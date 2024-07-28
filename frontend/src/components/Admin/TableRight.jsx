@@ -5,38 +5,28 @@ const TABLE_HEAD = ["Sl.no", "Name of Drug", "Donated"];
 const TABLE_ROWS = [
   {
     sl: 1,
-    name: "Dr. Mohammad Anvar",
-    job: "12300",
+    name: "Ferrous Sulfate",
+    job: "1300",
   },
   {
     sl: 2,
-    name: "Dr. Adarsh Kamath",
-    job: "11509",
+    name: "Folic Acid",
+    job: "9099",
   },
   {
     sl: 3,
-    name: "Dr. Harsh B",
-    job: "11000",
+    name: "Albendazole",
+    job: "7000",
   },
   {
     sl: 4,
-    name: "Dr. Manasa",
-    job: "10987",
+    name: "Paracetamol",
+    job: "6987",
   },
   {
     sl: 5,
-    name: "Dr. Theekshna",
-    job: "10200",
-  },
-  {
-    sl: 6,
-    name: "Dr. Swastik",
-    job: "10100",
-  },
-  {
-    sl: 7,
-    name: "Dr. Anshika",
-    job: "10010",
+    name: "Ibuprofen",
+    job: "5200",
   },
 ];
 

@@ -103,6 +103,14 @@ const getAllDonations = asyncHandler(async (req, res) => {
     .status(200)
     .json(new ApiResponse(200, donations, "Donations fetched successfully"));
 });
+// Get all donations //done
+const getAllDonationsByUser = asyncHandler(async (req, res) => {
+  const { userid } = req.params;
+  const donations = await Donation.find(userid).populate("owner", "fullName");
+  res
+    .status(200)
+    .json(new ApiResponse(200, donations, "Donations fetched successfully"));
+});
 
 //Get donations of users with total //done
 const getAllDonationsWithTotal = asyncHandler(async (req, res) => {
@@ -161,4 +169,5 @@ export {
   getDonationById,
   getAllDonationsWithTotal,
   verifyDonation,
+  getAllDonationsByUser,
 };

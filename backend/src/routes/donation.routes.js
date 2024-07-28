@@ -7,6 +7,7 @@ import {
   getAllDonationsWithTotal,
   getDonationById,
   verifyDonation,
+  getAllDonationsByUser,
 } from "../controllers/donation.controller.js";
 
 const router = Router();
@@ -17,5 +18,6 @@ router.route("/verify").post(verifyDonation);
 router.route("/admin/getDonations").get(getAllDonations);
 router.route("/admin/getAllDonationsWithTotal").get(getAllDonationsWithTotal);
 router.route("/admin/getDonations/:donationId").get(getDonationById);
+router.route("/getDonationsByUser/:userId").get(getAllDonationsByUser);
 
 export default router;

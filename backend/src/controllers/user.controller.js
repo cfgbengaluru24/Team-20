@@ -233,4 +233,17 @@ const logoutUser = asyncHandler(async (req, res) => {
   }
 });
 
-export { registerUser, refreshAccessToken, loginUser, logoutUser };
+//user all
+// Get donation by ID //done
+const getUserById = asyncHandler(async (req, res) => {
+  const { userId } = req.params;
+
+  const user = await User.findById(userId);
+  if (!user) {
+    throw new ApiError(404, "user not found");
+  }
+
+  res.status(200).json(new ApiResponse(200, user, "User fetched successfully"));
+});
+
+export { registerUser, refreshAccessToken, loginUser, logoutUser, getUserById };

@@ -55,7 +55,7 @@ export function Login({ setData }) {
         <div className="h-full w-full">
           <img
             className="mx-auto h-full w-full rounded-md object-cover"
-            src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+            src="https://images.unsplash.com/photo-1682786308110-fab1fe5e9446?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
         </div>

@@ -4,6 +4,7 @@ import {
   registerUser,
   loginUser,
   logoutUser,
+  getUserById,
 } from "../controllers/user.controller.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 const router = Router();
@@ -20,6 +21,7 @@ router.route("/register").post(
 );
 
 router.route("/login").post(loginUser);
+router.route("/:userId").get(getUserById);
 router.route("/logout").post(verifyJWT, logoutUser);
 
 export default router;
